@@ -18,3 +18,13 @@ https://www.youtube.com/watch?v=SWDhGSZNF9M&ab_channel=CodexCommunity
 
 https://scrumguides.org/scrum-guide.html
 
+
+Git branching strat: 
+
+https://rewind.com/blog/git-branching-strategies-explained/
+
+<!-- More in details -->
+
+Gitflow > https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+Ship/Show/Ask > https://martinfowler.com/articles/ship-show-ask.html
