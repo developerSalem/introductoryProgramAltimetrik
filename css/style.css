@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-image: url(/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.logo-text h2 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 37px;
+  color: #efc0ff;
+}
+
+.logo-text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 6px;
+  color: #e6eff8;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5rem;
+  bottom: 10rem;
+  width: 30vw;
+  height: 73vh;
+  background: #242121;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 20px #1a1919;
+}
+
+.container2 {
+  width: 25vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  background: #242121;
+  box-shadow: 11px 11px 22px #181616, -11px -11px 22px #302c2c;
+}
+
+.title-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.title-register h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin: 0.5rem;
+}
+
+.title-register p {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  margin: 0.5rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2rem;
+  font-size: 15px;
+  padding-left: 10px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+input {
+  margin: 0.2rem;
+  width: 18rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.icon {
+  height: 0.5rem;
+  color: #bf5fe1;
+  font-size: 1.5rem;
+  position: relative;
+  top: -2.5rem;
+  left: 7.5rem;
+}
+
+.remember {
+  padding-left: 0.3rem;
+  margin: 1rem;
+  font-size: 15px;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember-input {
+  display: flex;
+  align-items: center;
+}
+
+.remember-input input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.remember-input p {
+  color: white;
+  margin: 0.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.remember a {
+  text-decoration: none;
+  text-align: center;
+  color: #bf5fe1;
+}
+
+.violet-btn {
+  margin: 0.2rem;
+  width: 18rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #bf5fe1;
+}
+
+.not-register {
+  padding-left: 0.3rem;
+  margin: 1rem;
+  font-size: 15px;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.not-register p{
+    color: white;
+    
+}
+.not-register a{
+    color: #bf5fe1;
+
+}
