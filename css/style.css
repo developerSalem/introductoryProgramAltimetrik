@@ -169,6 +169,7 @@ input {
   color: #fff;
   font-size: 15px;
   background-color: #bf5fe1;
+  font-weight: 600;
 }
 
 .not-register {
@@ -187,6 +188,24 @@ input {
 }
 .not-register a {
   color: #bf5fe1;
+  text-decoration: none;
+}
+
+.gap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.gap .line{
+  border-bottom:solid 1px grey;
+  width:60%;
+}
+
+.gap p{
+  color: white;
 }
 
 .log-in-btns {
@@ -221,6 +240,8 @@ input {
 .log-in-btns button p {
   display: flex;
   width: 60%;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 @media (max-width: 550px) {
