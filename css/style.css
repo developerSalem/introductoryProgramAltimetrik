@@ -10,7 +10,7 @@ body {
   font-family: "Archivo", sans-serif;
   background-image: url(/img/bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 header .logo {
@@ -191,7 +191,7 @@ input {
   text-decoration: none;
 }
 
-.gap{
+.gap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,12 +199,12 @@ input {
   margin: 1rem;
 }
 
-.gap .line{
-  border-bottom:solid 1px grey;
-  width:60%;
+.gap .line {
+  border-bottom: solid 1px grey;
+  width: 60%;
 }
 
-.gap p{
+.gap p {
   color: white;
 }
 
@@ -268,5 +268,19 @@ input {
 
   header {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 }
