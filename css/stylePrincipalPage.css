@@ -223,9 +223,9 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  height: 50vh;
-  width: 14vw;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 12rem;
 }
 
 .nav {
@@ -246,8 +246,8 @@ input:checked + .slider:before {
 .highlight {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 50vh;
+  height: 100vh;
+  width: 12rem;
 }
 
 .icon-container {
@@ -280,4 +280,110 @@ input:checked + .slider:before {
   color: white;
   font-size: 22px;
   font-weight: 600;
+}
+
+.cards {
+  display: flex;
+}
+
+.main-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 30vh;
+  border-radius: 5%;
+  background: #303030;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.card-part-1 {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(/img/biomutant-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-part-1 ion-icon {
+  margin: 0.8rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.card-part-2 {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+
+.card-title p {
+  font-size: 22px;
+  font-weight: 300;
+  color: #bf5fe1;
+}
+
+.card-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  font-size: 16px;
+  font-weight: 300;
+  gap: .5rem;
+}
+
+.release {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  font-weight: 400;
+  color: #939393;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  color: white;
+}
+
+.card-icons{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: .5rem;
+}
+
+.card-icons img{
+  width: 20px;
 }
