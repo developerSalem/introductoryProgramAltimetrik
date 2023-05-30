@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>BEFEDA Game Finder</title>
-
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.9/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,57 +43,57 @@
                 <p>Log in to find the games you're looking for!</p>
             </div>
             <form action="">
-            <div class="input">
-                
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="input password">
-                <input type="password" placeholder="Password">
-                <span class="icon"><ion-icon name="eye-outline"></ion-icon></span>
-            </div>
-            <div class="remember">
-                <div class="remember-input">
-                    <input type="checkbox">
-                    <p>Remember me</p>
+                <div class="input">
+                    <input type="email" placeholder="Email" id="email">
                 </div>
-                <a href=""> Forgot password </a>
-            </div>
-            <div class="log-in">
-                <button class="violet-btn">
-                    Log in
-                </button>
-            </div>
-            <div class="not-register">
-                <p>Not register yet?</p>
-                <a href="">Register now</a>
-            </div>
-            <div class="gap">
-                <div class="line"></div>
-                <p>or</p>
-                <div class="line"></div>
-            </div>
-            <div class="log-in-btns">
-                <div class="facebook">
-                    <button class="btn"><ion-icon name="logo-facebook"></ion-icon>
-                    <p>Login with Facebook</p>
+                <div class="input">
+                    <input type="password" placeholder="Password" id="password">
+                    <div class="icon-password" onclick="showPassword()"><ion-icon id="icon-password"
+                            name="eye-outline"></ion-icon></div>
+                </div>
+                <div class="remember">
+                    <div class="remember-input">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                    </div>
+                    <a href=""> Forgot password </a>
+                </div>
+                <div class="log-in">
+                    <button class="violet-btn" id="log-in" onclick="login()">
+                        Log in
                     </button>
-                    
                 </div>
-                <div class="twitter">
-                    <button class="btn"><ion-icon name="logo-twitter"></ion-icon>
-                        <p>Login with Twitter</p>
-                    </button>
-                    
+                <div class="not-register">
+                    <p>Not register yet?</p>
+                    <a href="">Register now</a>
                 </div>
-                <div class="google">
-                    <button class="btn"><ion-icon name="logo-google"></ion-icon>
-                        <p>Login with Google</p>
-                    </button>
-                    
+                <div class="gap">
+                    <div class="line"></div>
+                    <p>or</p>
+                    <div class="line"></div>
                 </div>
+                <div class="log-in-btns">
+                    <div class="facebook">
+                        <button class="btn"><ion-icon name="logo-facebook"></ion-icon>
+                            <p>Login with Facebook</p>
+                        </button>
+
+                    </div>
+                    <div class="twitter">
+                        <button class="btn"><ion-icon name="logo-twitter"></ion-icon>
+                            <p>Login with Twitter</p>
+                        </button>
+
+                    </div>
+                    <div class="google">
+                        <button class="btn"><ion-icon name="logo-google"></ion-icon>
+                            <p>Login with Google</p>
+                        </button>
+
+                    </div>
             </form>
-                
-            </div>
+
+        </div>
         </div>
     </main>
 
@@ -101,6 +103,8 @@
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.9/dist/sweetalert2.all.min.js"></script>
+
 </body>
 
 </html>

@@ -10,7 +10,8 @@ body {
   font-family: "Archivo", sans-serif;
   background-image: url(/img/bg.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header .logo {
@@ -93,6 +94,7 @@ main {
   margin: 0.2rem;
   font-size: 15px;
   padding-left: 10px;
+  position: relative;
 }
 
 input {
@@ -109,13 +111,13 @@ input {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
 }
 
-.icon {
-  height: 0.5rem;
-  color: #bf5fe1;
+.icon-password ion-icon{
   font-size: 1.5rem;
-  position: relative;
-  top: -2.5rem;
-  left: 7.5rem;
+  color: #bf5fe1;
+  position: absolute;
+  right: 1.2rem;
+  top: 1rem;
+  cursor: pointer;
 }
 
 .remember {
