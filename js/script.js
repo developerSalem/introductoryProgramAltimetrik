@@ -24,10 +24,43 @@ function showPassword() {
   }
 }
 
+const inputSearch = document.querySelector("#input-search");
+const searchResult = document.querySelector(".search-result");
+const main = document.querySelector("main");
+
+function selectList(list) {
+  inputSearch.value = list.innerHTML;
+  searchResult.innerHTML = "";
+  main.classList.remove("body-opacity");
+}
+
 fetch("https://api.rawg.io/api/games?key=5ddfec9274094f7c93c073204ccecff1")
   .then((response) => response.json())
   .then((data) => {
+    inputSearch.addEventListener("keyup", () => {
+      let inputUser = inputSearch.value;
+      if (inputUser.length) {
+        apiFilter = api.filter((search) => {
+          return search.name.toLowerCase().includes(inputUser.toLowerCase());
+        });
+        display(apiFilter);
+      } else {
+        searchResult.innerHTML = "";
+        main.classList.remove("body-opacity");
+      }
+    });
+
+    function display(result) {
+      const content = result.map((list) => {
+        return "<li onclick=selectList(this)>" + list.name + "</li>";
+      });
+      searchResult.innerHTML = "<ul>" + content.join("") + "</ul>";
+      main.classList.add("body-opacity");
+    }
+
     let api = data.results;
+    let apiFilter = [];
+
     cardStats(api, "#card-template");
   });
 
@@ -38,6 +71,7 @@ function cardStats(Array, idContainer) {
   let container = document.querySelector(idContainer);
   console.log(Array);
   Array = orderByRating(Array);
+
   Array.forEach((x, i) => {
     let div = document.createElement("div");
     div.className = "card";
@@ -73,10 +107,9 @@ function cardStats(Array, idContainer) {
 }
 
 function getGenres(Array) {
-  let genres = "";
+  let genres = [];
   Array.forEach((element) => {
-    genres += element.name;
-    genres += " ";
+    genres.push(element.name);
   });
   return genres;
 }
@@ -86,11 +119,10 @@ function orderByRating(games) {
   return games;
 }
 
+const btnSwitch = document.querySelector("#checkbox");
+const header = document.querySelector("header");
 
-const btnSwitch = document.querySelector('#checkbox')
-const header = document.querySelector('header')
-
-btnSwitch.addEventListener('click', ()=>{
-  document.body.classList.toggle('white')
-  header.classList.toggle('white')
-})
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("white");
+  header.classList.toggle("white");
+});

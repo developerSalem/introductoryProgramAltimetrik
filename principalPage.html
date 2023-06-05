@@ -23,9 +23,10 @@
             </div>
         </div>
         <div class="search">
-
             <div class="search-icon"><ion-icon name="search-outline"></ion-icon></div>
-            <input type="search" placeholder="Search games...">
+            <input type="search" placeholder="Search games..." id="input-search">
+            <div class="search-result">
+            </div>
         </div>
         <div class="profile">
             <a id="log-out" href="index.html">Log out</a>
@@ -51,10 +52,10 @@
                 </div>
                 <div class="filter">
                     <div class="bg-filter">
-                        <a href=""><img src="img/filter.svg" alt="filter"></a>
+                        <div id="three-columns" ><img src="img/filter.svg" alt="filter"></div>
                     </div>
                     <div class="bg-filter">
-                        <a href=""><img src="img/otherFilter.svg" alt="Filter"></a>
+                        <div id="one-column"><img src="img/otherFilter.svg" alt="Filter"></div>
                     </div>
                 </div>
             </div>
@@ -98,7 +99,7 @@
             </aside>
             <div class="main-cards" id="card-template">
             </div>
-            
+
         </section>
     </main>
 
